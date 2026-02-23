@@ -13,4 +13,4 @@ RUN npm run build
 EXPOSE 8787
 
 # Lệnh chạy ứng dụng
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]

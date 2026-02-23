@@ -1,15 +1,19 @@
 {
-  "name": "NNX-BE",
+  "name": "nnx-be",
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
+    "build": "esbuild src/node.ts --bundle --platform=node --outfile=dist/index.js --format=esm --external:hono --external:@hono/node-server",
+    "start": "node dist/index.js",
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
+    "@hono/node-server": "^1.19.9",
     "hono": "^4.12.1"
   },
   "devDependencies": {
+    "esbuild": "^0.27.3",
     "wrangler": "^4.4.0"
   }
 }
