@@ -1,26 +1,26 @@
 {
-	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "nnx-be",
-	"main": "src/index.ts",
-	"compatibility_date": "2026-02-23",
-	"vars": {
-		"R2_PUBLIC_URL": "https://pub-0a45c831abe446a6916df14608bab74a.r2.dev"
-	},
-	"r2_buckets": [
-		{
-			"binding": "NNX_BUCKET",
-			"bucket_name": "nnx-bucket"
-		}
-	],
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_name": "nnx-db",
-			"database_id": "94170b34-509e-4d1f-9a25-62bed9ac5d5f"
-		}
-	],
-	"observability": {
-		"enabled": true,
-		"head_sampling_rate": 1
-	}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "nnx-be",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-23",
+  "vars": {
+    "R2_PUBLIC_URL": "https://pub-0a45c831abe446a6916df14608bab74a.r2.dev"
+  },
+  "r2_buckets": [
+    {
+      "binding": "NNX_BUCKET",
+      "bucket_name": "nnx-bucket"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "nnx-db",
+      "database_id": "94170b34-509e-4d1f-9a25-62bed9ac5d5f"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
 }

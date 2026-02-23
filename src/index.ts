@@ -4,6 +4,7 @@ import { cors } from 'hono/cors'
 type Bindings = {
   DB: D1Database
   NNX_BUCKET: R2Bucket
+  R2_PUBLIC_URL: string
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
